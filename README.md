@@ -1,14 +1,15 @@
 # Deskbookers Front-end Developer Expert Test
 
+By Caspar Boetes, made with React.js.
+
+Steps:
+Clone Project
+Run npm install or yarn to install packages & dependencies
+Run npm start or yarn start to run app in dev mode
+
+End Result? Click the image! :)
+
 ![deskbookers](https://user-images.githubusercontent.com/34174855/38075186-c50facd0-3331-11e8-8db1-1de46fc6a31e.png)
-
-Hi Front-ender!
-
-To further test your skills we like you to make a few assignments. We hope you like making them and ofcourse do them well ;)
-
-To complete these assignments you need to fork this repo. When you're done you can push your changes to your own repo (and let us know where to find it ofcourse).
-
-It is possible that these assignments don't work directly from your local hard drive in some browsers. In that case you can use your own web server (if you have one) or use XAMP (https://www.apachefriends.org/index.html) to install your own.
 
 ## Assignment 1: Show Search Results
 

@@ -1,5 +1,7 @@
 # Deskbookers Front-end Developer Expert Test
 
+![deskbookers](https://user-images.githubusercontent.com/34174855/38075186-c50facd0-3331-11e8-8db1-1de46fc6a31e.png)
+
 Hi Front-ender!
 
 To further test your skills we like you to make a few assignments. We hope you like making them and ofcourse do them well ;)

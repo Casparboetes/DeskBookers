@@ -2,12 +2,10 @@
 
 By Caspar Boetes, made with React.js.
 
-Steps:
-Clone Project
-Run npm install or yarn to install packages & dependencies
-Run npm start or yarn start to run app in dev mode
-
-End Result? Click the image! :)
+* Clone Project
+* Run npm install or yarn to install packages & dependencies
+* Run npm start or yarn start to run app
+* End Result? Click the image! :)
 
 ![deskbookers](https://user-images.githubusercontent.com/34174855/38075186-c50facd0-3331-11e8-8db1-1de46fc6a31e.png)
 

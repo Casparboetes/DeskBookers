@@ -1,6 +1,6 @@
-import { FETCHED_OFFICES } from '../actions.fetch'
+import { FETCHED_OFFICES } from '../actions/fetch'
 
-export default (state = [], {type, payload } = {} => {
+export default (state = [], {type, payload } = {}) => {
   switch(type) {
     case FETCHED_OFFICES :
       return payload
@@ -8,4 +8,4 @@ export default (state = [], {type, payload } = {} => {
     default :
       return state
   }
-})
+}

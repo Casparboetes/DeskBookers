@@ -15,9 +15,9 @@ class Main extends PureComponent {
       <div className="nav">
         <div className="row">
           <div className="logo">
-        <img src={Logo} width="291" height="50" alt="DeskbookersLogo" />
+            <img src={Logo} width="291" height="50" alt="DeskbookersLogo" />
+        </div>
       </div>
-    </div>
       </div>
       <div className="container">
         <div className="side">

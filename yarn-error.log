@@ -1,5 +1,5 @@
 Arguments: 
-  /home/funkmachine3k/.nvm/versions/node/v8.5.0/bin/node /usr/share/yarn/bin/yarn.js add --latest google-maps-react
+  /home/funkmachine3k/.nvm/versions/node/v8.5.0/bin/node /usr/share/yarn/bin/yarn.js install material-ui
 
 PATH: 
   /home/funkmachine3k/.nvm/versions/node/v8.5.0/bin:/home/funkmachine3k/.rbenv/shims:/home/funkmachine3k/.rbenv/plugins/ruby-build/bin:/home/funkmachine3k/.rbenv/shims:/home/funkmachine3k/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
@@ -7404,14 +7404,10 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Missing list of packages to add to your project.
+  Error: `install` has been replaced with `add` to add new dependencies. Run "yarn add material-ui" instead.
       at new MessageError (/usr/share/yarn/lib/cli.js:186:110)
-      at Object.<anonymous> (/usr/share/yarn/lib/cli.js:40587:13)
+      at Object.<anonymous> (/usr/share/yarn/lib/cli.js:21987:13)
       at Generator.next (<anonymous>)
       at step (/usr/share/yarn/lib/cli.js:98:30)
-      at /usr/share/yarn/lib/cli.js:116:14
-      at Promise (<anonymous>)
-      at F (/usr/share/yarn/lib/cli.js:23451:28)
-      at Object.<anonymous> (/usr/share/yarn/lib/cli.js:95:12)
-      at Object.run (/usr/share/yarn/lib/cli.js:40599:19)
-      at run (/usr/share/yarn/lib/cli.js:89113:20)
+      at /usr/share/yarn/lib/cli.js:109:13
+      at <anonymous>

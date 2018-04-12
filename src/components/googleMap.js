@@ -67,7 +67,7 @@ class GoogleMap extends PureComponent {
                 zoom={13}
                 onClick={ this.onMapClicked }
                 >
-                { this.renderMarker() }
+                {this.state.offices ? this.renderMarker() : null}
             </Map>
           </div>
         )

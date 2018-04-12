@@ -31,12 +31,6 @@ class searchResult extends PureComponent {
       )
   }
 
-  onUpdateInput = (value) => {
-  this.setState({
-    dataSource: value
-  })
-}
-
   renderOffices(offices, id) {
     return this.state.offices.map((office, index) => {
       return(

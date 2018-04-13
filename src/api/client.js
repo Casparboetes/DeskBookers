@@ -23,3 +23,13 @@ export default class ApiClient {
     return [this.host, path].join('')
   }
 }
+//
+//
+// // no error checking
+// (yourFunctionName || Function)();
+//
+// // debugging, maybe on Firefox
+// (yourFunctionName || console.error)();
+//
+// // debugging on Chrome
+// (yourFunctionName || function(){ console.error(arguments) })();

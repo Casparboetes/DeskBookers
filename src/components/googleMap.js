@@ -51,7 +51,6 @@ class GoogleMap extends PureComponent {
   }
 
   render() {
-
       const { error, isLoaded } = this.state
 
       if (error) {

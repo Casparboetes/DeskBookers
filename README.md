@@ -1,13 +1,17 @@
 # Deskbookers Front-end Developer Expert Test
 
+Decided to continue this project to work with Redux. Adding a store and a search option. Added Action and Reducer. Nonetheless, have a look :).
+
 By Caspar Boetes, made with React.js.
 
-* Clone Project
+```
+* Git clone https://github.com/Casparboetes/DeskBookers
 * Run npm install or yarn to install packages & dependencies
 * Run npm start or yarn start to run app
 * End Result? Click the image! :)
+```
 
-![deskbookers](https://user-images.githubusercontent.com/34174855/38075186-c50facd0-3331-11e8-8db1-1de46fc6a31e.png)
+![desk1](https://user-images.githubusercontent.com/34174855/38724382-5ff24fa4-3f04-11e8-9231-ffef313a543e.png)
 
 ## Assignment 1: Show Search Results
 

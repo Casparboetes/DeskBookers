@@ -3,8 +3,8 @@ import React, { PureComponent } from 'react'
 import './searchResults.css'
 
 class searchResult extends PureComponent {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       error: null,
       isLoaded: false,
@@ -67,7 +67,7 @@ class searchResult extends PureComponent {
                 </tr>
               </thead>
               <tbody>
-                {this.renderOffices()}
+                {this.state.offices ? this.renderOffices() : null}
               </tbody>
             </table>
           </div>

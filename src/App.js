@@ -1,16 +1,26 @@
 // src/App.js
 import React, { Component } from 'react'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import muiTheme from './styles/theme'
+import PropTypes from 'prop-types'
 //components
 import Main from './containers/Main'
 
 
 class App extends Component {
+  static childContextTypes = {
+   muiTheme: PropTypes.object.isRequired,
+ }
+
+  getChildContext() {
+   return { muiTheme }
+  }
 
   render() {
     return (
-        <div>
+        <MuiThemeProvider muiTheme={muiTheme}>
           <Main />
-        </div>
+        </MuiThemeProvider>
     )
   }
 }

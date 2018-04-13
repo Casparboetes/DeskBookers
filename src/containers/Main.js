@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 //components
 import GoogleMap from '../components/googleMap'
 import SearchResults from '../components/searchResults'
+import SearchBar from '../components/searchBar'
 //images
 import Logo from '../images/logo.svg'
 //styling
@@ -13,11 +14,12 @@ class Main extends PureComponent {
     return(
       <div>
       <div className="nav">
-        <div className="row">
           <div className="logo">
-        <img src={Logo} width="291" height="50" alt="DeskbookersLogo" />
-      </div>
-    </div>
+            <img src={Logo} width="291" height="50" alt="DeskbookersLogo" />
+          </div>
+          <div className="searchBar">
+            <SearchBar />
+          </div>
       </div>
       <div className="container">
         <div className="side">

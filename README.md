@@ -11,7 +11,9 @@ By Caspar Boetes, made with React.js.
 * End Result? Click the image! :)
 ```
 
-![desk1](https://user-images.githubusercontent.com/34174855/38724382-5ff24fa4-3f04-11e8-9231-ffef313a543e.png)
+
+![desk2](https://user-images.githubusercontent.com/34174855/38724499-bb9eb6d0-3f04-11e8-8b64-07c03fa017d2.png)
+
 
 ## Assignment 1: Show Search Results
 

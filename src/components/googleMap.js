@@ -14,14 +14,12 @@ class GoogleMap extends PureComponent {
     super()
     this.state = {
       error: null,
-      isLoaded: false,
-      offices: [],
+      isLoaded: true,
     }
   }
 
   componentDidMount() {
     fetch("https://www.deskbookers.com/nl-nl/explore/ajax.json?q=amsterdam")
-      .then(res => res.json())
       .then(
         (result) => {
           this.setState({

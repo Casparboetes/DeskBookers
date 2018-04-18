@@ -34,7 +34,7 @@ class searchResult extends PureComponent {
   }
 
   renderOffices() {
-    return this.props.offices.map((office, index) => {
+    return this.props.offices.rows.map((office, index) => {
       return(
         <tr key={office.id}>
           <td>{ office.name}</td>
@@ -69,7 +69,7 @@ class searchResult extends PureComponent {
                 </tr>
               </thead>
               <tbody>
-                {this.state.offices ? this.renderOffices() : null}
+                {this.props.offices.rows ? this.renderOffices() : null}
               </tbody>
             </table>
           </div>

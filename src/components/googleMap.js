@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react'
+import { connect } from 'react-redux'
+
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 
 const googleMapStyle = {
@@ -37,7 +39,7 @@ class GoogleMap extends PureComponent {
   }
 
   renderMarker(offices) {
-    return this.state.offices.map((office) => {
+    return this.props.offices.rows.map((office) => {
       return(
         <Marker
           key={ office.id }
@@ -62,11 +64,11 @@ class GoogleMap extends PureComponent {
           <div style={ googleMapStyle }>
             <Map
                 google={ this.props.google }
-                initialCenter={{ lat: 52.3702, lng: 4.8952 }}
+                initialCenter={this.props.center}
+                center={this.props.offices.center}
                 zoom={13}
-                onClick={ this.onMapClicked }
                 >
-                {this.state.offices ? this.renderMarker() : null}
+                {this.props.offices.rows ? this.renderMarker() : null}
             </Map>
           </div>
         )
@@ -74,7 +76,7 @@ class GoogleMap extends PureComponent {
   }
 }
 
+const mapStateToProps = ({ offices }) => ({ offices })
 
-export { GoogleMap }
-export default GoogleApiWrapper({
-  apiKey: 'AIzaSyByixSekM2R5J1v3lvbGi3qVOmr5pUK_XI' })(GoogleMap)
+export default connect( mapStateToProps )(GoogleApiWrapper({
+  apiKey: 'AIzaSyByixSekM2R5J1v3lvbGi3qVOmr5pUK_XI' })(GoogleMap))

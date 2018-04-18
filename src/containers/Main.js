@@ -26,7 +26,7 @@ class Main extends PureComponent {
           <SearchResults />
         </div>
         <div className="map">
-          <GoogleMap />
+          <GoogleMap center={{lat: 52.3702, lng: 4.8952}} />
         </div>
       </div>
     </div>

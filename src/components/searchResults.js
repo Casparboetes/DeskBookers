@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { connect } from 'react-redux'
 //styling
 import './searchResults.css'
 
@@ -10,6 +11,7 @@ class searchResult extends PureComponent {
       isLoaded: false,
       offices: [],
     }
+    this.renderOffices = this.renderOffices.bind(this)
   }
 
   componentDidMount() {
@@ -31,8 +33,8 @@ class searchResult extends PureComponent {
       )
   }
 
-  renderOffices(offices, id) {
-    return this.state.offices.map((office, index) => {
+  renderOffices() {
+    return this.props.offices.map((office, index) => {
       return(
         <tr key={office.id}>
           <td>{ office.name}</td>
@@ -75,4 +77,7 @@ class searchResult extends PureComponent {
     }
   }
 }
-export default searchResult
+
+const mapStateToProps = ({ offices }) => ({ offices })
+
+export default connect( mapStateToProps )(searchResult)

@@ -5,13 +5,9 @@ import reducers from './reducers'
 
 const reducer = combineReducers(reducers)
 
-const devTools = window.devToolsExtenstion ?
-window.devToolsExtenstion() : (f) => f
+const devTools = window.devToolsExtenstion ? window.devToolsExtenstion() : (f) => f
 
-const enhancer = compose(
-  applyMiddleware(ReduxThunk),
-  devTools
-)
+const enhancer = compose( applyMiddleware(ReduxThunk), devTools)
 
 const store = createStore(reducer, enhancer)
 

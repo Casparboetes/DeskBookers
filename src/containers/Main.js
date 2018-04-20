@@ -13,20 +13,20 @@ class Main extends PureComponent {
     return(
       <div>
         <div className="nav">
-            <div className="logo">
-              <img src={Logo} width="291" height="50" alt="DeskbookersLogo" />
-            </div>
-            <div className="searchBar">
-              <SearchBar />
-            </div>
+          <div className="logo">
+            <img src={Logo} width="291" height="50" alt="DeskbookersLogo" />
+          </div>
+          <div className="searchBar">
+            <SearchBar />
+          </div>
         </div>
         <div className="container">
-            <div className="side">
-              <SearchResults />
-            </div>
-        <div className="map">
-          <GoogleMap center={{lat: 52.3702, lng: 4.8952}} />
-        </div>
+          <div className="side">
+            <SearchResults />
+          </div>
+          <div className="map">
+            <GoogleMap center={{lat: 52.3702, lng: 4.8952}} />
+          </div>
         </div>
       </div>
     )

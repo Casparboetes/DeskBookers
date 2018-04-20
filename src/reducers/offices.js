@@ -7,7 +7,6 @@ export default (state = [], { type, payload } = {}) => {
               lat: ((payload.bounds.n + payload.bounds.s) / 2),
               lng: ((payload.bounds.w + payload.bounds.e) / 2)
             }
-    console.log(mapCenter)
     return {center: mapCenter, rows: payload.rows}
 
     default :

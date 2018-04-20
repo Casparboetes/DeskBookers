@@ -1,10 +1,10 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchOffices } from '../actions/fetch'
 import AutoComplete from 'material-ui/AutoComplete'
 import RaisedButton from 'material-ui/RaisedButton'
 
-class SearchBar extends PureComponent {
+class SearchBar extends Component {
   constructor(props) {
     super(props)
     this.state = {

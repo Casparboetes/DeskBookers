@@ -10,32 +10,6 @@ const googleMapStyle = {
 }
 
 class GoogleMap extends PureComponent {
-  constructor() {
-    super()
-    this.state = {
-      error: null,
-      isLoaded: true,
-    }
-  }
-
-  componentDidMount() {
-    fetch("https://www.deskbookers.com/nl-nl/explore/ajax.json?q=amsterdam")
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            offices: result.rows
-          })
-        },
-        (error) => {
-          this.setState({
-            isLoaded: true,
-            error
-          })
-        }
-      )
-  }
-
   renderMarker(offices) {
     return this.props.offices.rows.map((office) => {
       return(
@@ -51,26 +25,18 @@ class GoogleMap extends PureComponent {
   }
 
   render() {
-      const { error, isLoaded } = this.state
-
-      if (error) {
-        return <div>Error: {error.message}</div>
-      } else if (!isLoaded) {
-        return <div>Loading...</div>
-      } else {
-        return (
-          <div style={ googleMapStyle }>
-            <Map
-                google={ this.props.google }
-                initialCenter={this.props.center}
-                center={this.props.offices.center}
-                zoom={13}
-                >
-                {this.props.offices.rows ? this.renderMarker() : null}
-            </Map>
-          </div>
-        )
-      }
+    return (
+      <div style={ googleMapStyle }>
+        <Map
+            google={ this.props.google }
+            initialCenter={this.props.center}
+            center={this.props.offices.center}
+            zoom={13}
+            >
+            {this.props.offices.rows ? this.renderMarker() : null}
+        </Map>
+      </div>
+    )
   }
 }
 

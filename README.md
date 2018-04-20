@@ -1,6 +1,6 @@
 # Deskbookers Front-end Developer Expert Test
 
-Decided to continue this project to work with Redux. Adding a store and a search option. Added Action and Reducer. Nonetheless, have a look :).
+Now brand new with Redux, Have a look. :)
 
 By Caspar Boetes, made with React.js.
 
